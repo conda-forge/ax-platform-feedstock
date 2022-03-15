@@ -23,6 +23,7 @@ requirements:
   run:
     - botorch ==0.6.2
     - jinja2
+    - multipledispatch
     - pandas
     - plotly
     - python >=3.7
