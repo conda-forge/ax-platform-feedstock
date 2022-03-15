@@ -43,7 +43,6 @@ test:
     - ax.early_stopping.strategies
     - ax.early_stopping.tests
     - ax.exceptions
-    - ax.global_stopping
     - ax.global_stopping.strategies
     - ax.metrics
     - ax.metrics.tests
