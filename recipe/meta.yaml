@@ -24,6 +24,7 @@ requirements:
     - botorch ==0.6.2
     - jinja2
     - multipledispatch
+    - sqlalchemy
     - pandas
     - plotly
     - python >=3.7
