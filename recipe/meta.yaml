@@ -90,7 +90,7 @@ test:
     - ax.utils.tutorials
   commands:
     - pip check
-    - pytest -vvv --capture-sys .
+    - pytest -vvv --capture=tee-sys .
   requires:
     - pip
     - pytest
