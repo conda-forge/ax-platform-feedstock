@@ -1,5 +1,5 @@
 {% set name = "ax-platform" %}
-{% set version = "0.1.20" %}
+{% set version = "0.2.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ax-platform-{{ version }}.tar.gz
-  sha256: a2ba7648c282e0328c2eb992aa933c11c8ca407c9753cf4cdf05af749d8651e6
+  sha256: 7a184f2db38d6b7406c8d8cf668613b7107146c0e9a2476f5d3110ca044a28b0
 
 build:
   number: 0
@@ -21,8 +21,10 @@ requirements:
     - python >=3.7
     - setuptools-scm
   run:
-    - botorch ==0.4.0
+    - botorch ==0.6.2
     - jinja2
+    - multipledispatch
+    - sqlalchemy
     - pandas
     - plotly
     - python >=3.7
@@ -34,10 +36,65 @@ test:
   imports:
     - ax
     - ax.benchmark
+    - ax.benchmark.botorch_modular
+    - ax.benchmark.tests
+    - ax.core
+    - ax.core.tests
+    - ax.early_stopping
+    - ax.early_stopping.strategies
+    - ax.early_stopping.tests
+    - ax.exceptions
+    - ax.metrics
+    - ax.metrics.tests
+    - ax.modelbridge
+    - ax.modelbridge.strategies
+    - ax.modelbridge.tests
+    - ax.modelbridge.transforms
+    - ax.models
+    - ax.models.discrete
+    - ax.models.numpy
+    - ax.models.random
+    - ax.models.tests
+    - ax.models.torch
+    - ax.models.torch.botorch_modular
+    - ax.models.torch.tests
+    - ax.plot
+    - ax.plot.css
+    - ax.plot.js
+    - ax.plot.js.common
+    - ax.plot.tests
+    - ax.runners
+    - ax.service
+    - ax.service.tests
+    - ax.service.utils
+    - ax.storage
+    - ax.storage.json_store
+    - ax.storage.json_store.tests
+    - ax.storage.sqa_store
+    - ax.storage.sqa_store.tests
+    - ax.utils
+    - ax.utils.common
+    - ax.utils.common.tests
+    - ax.utils.flake8_plugins
+    - ax.utils.measurement
+    - ax.utils.measurement.tests
+    - ax.utils.notebook
+    - ax.utils.report
+    - ax.utils.report.resources
+    - ax.utils.report.tests
+    - ax.utils.stats
+    - ax.utils.stats.tests
+    - ax.utils.testing
+    - ax.utils.testing.metrics
+    - ax.utils.testing.tests
+    - ax.utils.tutorials
   commands:
     - pip check
+    # Skip test suite for now
+#     - pytest -vvv --capture=tee-sys --pyargs ax
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/facebook/Ax
@@ -48,3 +105,4 @@ about:
 extra:
   recipe-maintainers:
     - rpanai
+    - thewchan
