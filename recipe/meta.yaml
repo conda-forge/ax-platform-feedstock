@@ -37,7 +37,14 @@ test:
   imports:
     - ax
     - ax.benchmark
-    - ax.benchmark.botorch_modular
+    - ax.benchmark.methods
+    - ax.benchmark.problems
+    - ax.benchmark.problems.baseline_results
+    - ax.benchmark.problems.baseline_results.hpo
+    - ax.benchmark.problems.baseline_results.hpo.torchvision
+    - ax.benchmark.problems.baseline_results.synthetic
+    - ax.benchmark.problems.baseline_results.synthetic.hd
+    - ax.benchmark.problems.hpo
     - ax.benchmark.tests
     - ax.core
     - ax.core.tests
@@ -45,6 +52,9 @@ test:
     - ax.early_stopping.strategies
     - ax.early_stopping.tests
     - ax.exceptions
+    - ax.global_stopping
+    - ax.global_stopping.strategie
+    - ax.global_stopping.tests
     - ax.metrics
     - ax.metrics.tests
     - ax.modelbridge
@@ -65,6 +75,7 @@ test:
     - ax.plot.js.common
     - ax.plot.tests
     - ax.runners
+    - ax.runners.tests
     - ax.service
     - ax.service.tests
     - ax.service.utils
