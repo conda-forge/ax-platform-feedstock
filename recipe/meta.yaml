@@ -19,9 +19,10 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools >=34.4
     - setuptools-scm
   run:
-    - botorch ==0.6.2
+    - botorch ==0.6.4
     - jinja2
     - multipledispatch
     - sqlalchemy
