@@ -1,5 +1,5 @@
 {% set name = "ax-platform" %}
-{% set version = "0.2.4" %}
+{% set version = "0.2.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ax-platform-{{ version }}.tar.gz
-  sha256: 7a184f2db38d6b7406c8d8cf668613b7107146c0e9a2476f5d3110ca044a28b0
+  sha256: 58f38a90df24427a10872858fbcbc987df3e1560f354020a9d8fa26cc0242802
 
 build:
   number: 0
@@ -19,9 +19,10 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools >=34.4
     - setuptools-scm
   run:
-    - botorch ==0.6.2
+    - botorch ==0.6.4
     - jinja2
     - multipledispatch
     - sqlalchemy
@@ -36,7 +37,14 @@ test:
   imports:
     - ax
     - ax.benchmark
-    - ax.benchmark.botorch_modular
+    - ax.benchmark.methods
+    - ax.benchmark.problems
+    - ax.benchmark.problems.baseline_results
+    - ax.benchmark.problems.baseline_results.hpo
+    - ax.benchmark.problems.baseline_results.hpo.torchvision
+    - ax.benchmark.problems.baseline_results.synthetic
+    - ax.benchmark.problems.baseline_results.synthetic.hd
+    - ax.benchmark.problems.hpo
     - ax.benchmark.tests
     - ax.core
     - ax.core.tests
@@ -44,6 +52,9 @@ test:
     - ax.early_stopping.strategies
     - ax.early_stopping.tests
     - ax.exceptions
+    - ax.global_stopping
+    - ax.global_stopping.strategies
+    - ax.global_stopping.tests
     - ax.metrics
     - ax.metrics.tests
     - ax.modelbridge
@@ -64,6 +75,7 @@ test:
     - ax.plot.js.common
     - ax.plot.tests
     - ax.runners
+    - ax.runners.tests
     - ax.service
     - ax.service.tests
     - ax.service.utils
