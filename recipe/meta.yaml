@@ -53,7 +53,7 @@ test:
     - ax.early_stopping.tests
     - ax.exceptions
     - ax.global_stopping
-    - ax.global_stopping.strategie
+    - ax.global_stopping.strategies
     - ax.global_stopping.tests
     - ax.metrics
     - ax.metrics.tests
