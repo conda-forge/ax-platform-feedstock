@@ -24,8 +24,6 @@ requirements:
   run:
     - botorch ==0.6.4
     - jinja2
-    - multipledispatch
-    - sqlalchemy
     - pandas
     - plotly
     - python >=3.7
@@ -36,77 +34,10 @@ requirements:
 test:
   imports:
     - ax
-    - ax.benchmark
-    - ax.benchmark.methods
-    - ax.benchmark.problems
-    - ax.benchmark.problems.baseline_results
-    - ax.benchmark.problems.baseline_results.hpo
-    - ax.benchmark.problems.baseline_results.hpo.torchvision
-    - ax.benchmark.problems.baseline_results.synthetic
-    - ax.benchmark.problems.baseline_results.synthetic.hd
-    - ax.benchmark.problems.hpo
-    - ax.benchmark.tests
-    - ax.core
-    - ax.core.tests
-    - ax.early_stopping
-    - ax.early_stopping.strategies
-    - ax.early_stopping.tests
-    - ax.exceptions
-    - ax.global_stopping
-    - ax.global_stopping.strategies
-    - ax.global_stopping.tests
-    - ax.metrics
-    - ax.metrics.tests
-    - ax.modelbridge
-    - ax.modelbridge.strategies
-    - ax.modelbridge.tests
-    - ax.modelbridge.transforms
-    - ax.models
-    - ax.models.discrete
-    - ax.models.numpy
-    - ax.models.random
-    - ax.models.tests
-    - ax.models.torch
-    - ax.models.torch.botorch_modular
-    - ax.models.torch.tests
-    - ax.plot
-    - ax.plot.css
-    - ax.plot.js
-    - ax.plot.js.common
-    - ax.plot.tests
-    - ax.runners
-    - ax.runners.tests
-    - ax.service
-    - ax.service.tests
-    - ax.service.utils
-    - ax.storage
-    - ax.storage.json_store
-    - ax.storage.json_store.tests
-    - ax.storage.sqa_store
-    - ax.storage.sqa_store.tests
-    - ax.utils
-    - ax.utils.common
-    - ax.utils.common.tests
-    - ax.utils.flake8_plugins
-    - ax.utils.measurement
-    - ax.utils.measurement.tests
-    - ax.utils.notebook
-    - ax.utils.report
-    - ax.utils.report.resources
-    - ax.utils.report.tests
-    - ax.utils.stats
-    - ax.utils.stats.tests
-    - ax.utils.testing
-    - ax.utils.testing.metrics
-    - ax.utils.testing.tests
-    - ax.utils.tutorials
   commands:
     - pip check
-    # Skip test suite for now
-#     - pytest -vvv --capture=tee-sys --pyargs ax
   requires:
     - pip
-    - pytest
 
 about:
   home: https://github.com/facebook/Ax
