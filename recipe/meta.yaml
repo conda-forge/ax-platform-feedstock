@@ -22,7 +22,7 @@ requirements:
     - setuptools >=34.4
     - setuptools-scm
   run:
-    - botorch >=0.6.6
+    - botorch ==0.7.2
     - jinja2
     - pandas
     - plotly
