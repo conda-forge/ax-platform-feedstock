@@ -24,6 +24,7 @@ requirements:
   run:
     - botorch ==0.7.2
     - jinja2
+    - linear-operator==0.1.1
     - pandas
     - plotly
     - python >=3.7
