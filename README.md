@@ -1,11 +1,11 @@
-About ax-platform
-=================
+About ax-platform-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ax-platform-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/facebook/Ax
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ax-platform-feedstock/blob/main/LICENSE.txt)
 
 Summary: Adaptive Experimentation
 
