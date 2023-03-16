@@ -1,5 +1,5 @@
 {% set name = "ax-platform" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ax-platform-{{ version }}.tar.gz
-  sha256: 4485e02e0cf1256d6c02c65d6c01016bdc74bec1d49f64e40f0702765fcc2892
+  sha256: 0bad1d16155560fdd8644308d2771edf7fd977ad41fea15a7ecf3f224bc36517
 
 build:
   number: 0
