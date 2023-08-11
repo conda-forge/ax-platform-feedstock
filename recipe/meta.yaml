@@ -18,16 +18,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
     - setuptools >=34.4
     - setuptools-scm
   run:
-    - botorch ==0.8.5
+    - botorch ==0.9.2
     - ipywidgets
     - jinja2
     - pandas
     - plotly >=5.12.0
-    - python >=3.7
+    - python >=3.9
     - scikit-learn
     - scipy
     - typeguard ==2.13.3
