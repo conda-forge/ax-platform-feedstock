@@ -22,7 +22,7 @@ requirements:
     - setuptools >=34.4
     - setuptools-scm
   run:
-    - botorch ==0.9.4
+    - botorch ==0.9.5
     - ipywidgets
     - jinja2
     - pandas
