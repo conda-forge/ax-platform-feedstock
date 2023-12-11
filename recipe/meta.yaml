@@ -1,5 +1,5 @@
 {% set name = "ax-platform" %}
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ax-platform-{{ version }}.tar.gz
-  sha256: 750d75ffca63bd7bd1257ec16024520122a560dcef7df7432e6346f68de7bced
+  sha256: c8be9b4c00a0e4a1aebf443e8d3da7c52cf98f9a88e27591058d6f5f0d16470e
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - setuptools >=34.4
     - setuptools-scm
   run:
-    - botorch ==0.9.4
+    - botorch ==0.9.5
     - ipywidgets
     - jinja2
     - pandas
