@@ -1,5 +1,5 @@
 {% set name = "ax-platform" %}
-{% set version = "0.3.7" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ax-platform-{{ version }}.tar.gz
-  sha256: 91f6a7d0eb08826e2f3f6a17fa64d4c9e2980ecd2147ed6418d7340c302961c1
+  sha256: eae847151e47ec6e7f0c4b7add9273d8d4e0d759abec795bdbb938a001fa63da
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
     - ipywidgets
     - plotly >=5.12.0
     - typeguard
-    - pyre-extensions 
+    - pyre-extensions
 
 test:
   imports:
