@@ -18,12 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python >=3.10
     - setuptools >=34.4
     - setuptools-scm
   run:
-    - python >=3.9
-    - botorch ==0.10.0
+    - python >=3.10
+    - botorch ==0.11.0
     - jinja2
     - pandas
     - scipy
