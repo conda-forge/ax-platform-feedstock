@@ -23,7 +23,7 @@ requirements:
     - setuptools-scm
   run:
     - python >=3.10
-    - botorch ==0.11.0
+    - botorch ==0.11.3
     - jinja2
     - pandas
     - scipy
