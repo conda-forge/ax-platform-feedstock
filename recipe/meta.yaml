@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "ax-platform" %}
-{% set version = "0.4.3" %}
+{% set version = "0.5.0" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ax-platform-{{ version }}.tar.gz
-  sha256: 221c5d9d01bd6ba85d610c91eea2b4a04b19bba625bdbaa5e0f87daf546fd9eb
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: ac3b05e0ca02e85746202a9fb88026cec7c61e670fa1a58c9669c2cc33bccf79
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,7 +24,7 @@ requirements:
     - setuptools-scm
   run:
     - python >={{ python_min }}
-    - botorch ==0.12.0
+    - botorch ==0.13.0
     - jinja2
     - pandas
     - scipy
