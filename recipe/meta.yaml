@@ -24,7 +24,7 @@ requirements:
     - setuptools-scm
   run:
     - python >={{ python_min }}
-    - botorch ==0.13.0
+    - botorch ==0.14.0
     - jinja2
     - pandas
     - scipy
