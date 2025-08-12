@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "ax-platform" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2bd29cfb3578ad1834729d7461802c93921b6b4796bee0356478a884ebe0e99e
+  sha256: 3c9a268acc68a70167c6a003686137ebcb6ec745a444d972d400b2d3f170e2b2
 
 build:
   number: 0
