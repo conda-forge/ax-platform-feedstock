@@ -21,7 +21,7 @@ build:
 requirements:
   host:
     - pip
-    - python {{ python_min }}.*
+    - python ${{ python_min }}.*
     - setuptools >=34.4
     - setuptools-scm
   run:
