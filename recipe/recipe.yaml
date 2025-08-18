@@ -3,7 +3,7 @@ schema_version: 1
 context:
   python_min: 3.10
   name: ax-platform
-  version: 1.0.0
+  version: 1.1.0
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 2bd29cfb3578ad1834729d7461802c93921b6b4796bee0356478a884ebe0e99e
+  sha256: 3c9a268acc68a70167c6a003686137ebcb6ec745a444d972d400b2d3f170e2b2
 
 build:
   number: 0
@@ -21,12 +21,12 @@ build:
 requirements:
   host:
     - pip
-    - python ${{ python_min }}.*
+    - python {{ python_min }}.*
     - setuptools >=34.4
     - setuptools-scm
   run:
     - python >=${{ python_min }}
-    - botorch ==0.14.0
+    - botorch ==0.15.1
     - jinja2
     - pandas
     - scipy
