@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ax-platform
-  version: "1.1.2"
+  version: "1.2.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: e280e8ea2c71027b5e352cb2827a164c0ab4594a58c575dd0d411083c8740a34
+  sha256: 6c55801bcd0ea420917ed1842c1d6e29191261216ae507c9b27d2ddb7104d536
 
 build:
   number: 0
