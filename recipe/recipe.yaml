@@ -26,7 +26,7 @@ requirements:
     - wheel
   run:
     - python >=${{ python_min }}
-    - botorch >=0.15.1
+    - botorch >=0.16.1,<0.16.2dev9999
     - jinja2
     - pandas
     - scipy
