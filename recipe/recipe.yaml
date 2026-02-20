@@ -37,6 +37,7 @@ requirements:
     - pyre-extensions
     - sympy
     - markdown
+    - python-graphviz
     # from pytorch[pymoo]
     - pymoo
 
