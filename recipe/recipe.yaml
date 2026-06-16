@@ -40,6 +40,9 @@ requirements:
     - python-graphviz
     # from pytorch[pymoo]
     - pymoo
+  run_constrained:
+    - jaxlib >=0.7.0
+    - jax >=0.7.0
 
 tests:
   - python:
